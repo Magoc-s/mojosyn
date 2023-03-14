@@ -1,0 +1,26 @@
+{
+  "name": "mojosyn",
+  "displayName": "MojoSyn",
+  "description": "Syntax highlighting for the Mojo language, created for ANU's COMP3710-Compilers special topics course. Visit https://comp.anu.edu.au/courses/comp3710-compilers/ for information and language spec.",
+  "version": "0.0.1",
+  "repository": {"url": "git@github.com:Magoc-s/mojosyn.git"},
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mojo",
+      "aliases": ["Mojo", "mojo"],
+      "extensions": [".mj"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mojo",
+      "scopeName": "source.mojo",
+      "path": "./syntaxes/mojo.tmLanguage.json"
+    }]
+  }
+}
